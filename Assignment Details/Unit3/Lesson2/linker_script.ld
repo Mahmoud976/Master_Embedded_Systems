@@ -1,18 +1,35 @@
-ENTRY(reset);
+ENTRY(reset)
 
 MEMORY
 {
-	MEM(rwx) : ORIGIN = 0x00000000, LENGTH = 64M
+    RAM (rwx) : ORIGIN = 0x00010000, LENGTH = 64M
 }
+
 SECTIONS
 {
-. = 0x10000;
+    . = 0x00010000;
 
-.startup . :{startup.o (.text)}
-.text : { *(.text) } > MEM
-.data : { *(.data) } > MEM
-.bss  : { *(.bss)  } > MEM
-. += 0x1000;
-stack_ptr = .;
+    .startup . :
+    {
+        startup.o(.text)
+    } > RAM
 
+    .text :
+    {
+        *(.text*)
+    } > RAM
+
+    .data :
+    {
+        *(.data*)
+    } > RAM
+
+    .bss :
+    {
+        *(.bss*)
+        *(COMMON)
+    } > RAM
+
+    . += 0x1000;
+    stack_ptr = .;
 }
