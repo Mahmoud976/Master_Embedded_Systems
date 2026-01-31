@@ -8,6 +8,8 @@ MEMORY
     SRAM  (RWX): ORIGIN = 0x20000000, LENGTH = 20K
 }
 
+/* Stack size definition - OUTSIDE SECTIONS */
+_stack_size = 0x1000;  /* 4 KB stack */
 
 /* Sections */
 SECTIONS
@@ -23,29 +25,35 @@ SECTIONS
     /* Initialized data in SRAM, loaded from Flash */
     .data : 
     {
-        _sdata = .;              /* start of .data in SRAM */
-        *(.data*)                /* all .data sections */
-        _edata = .;              /* end of .data in SRAM */
+        . = ALIGN(8);             /* ensure start aligned */
+        _sdata = .;               /* start of .data in SRAM */
+        *(.data*)                 /* all .data sections */
+        . = ALIGN(8);             /* align end of .data */
+        _edata = .;               /* end of .data in SRAM */
     } > SRAM AT > FLASH
     _sidata = LOADADDR(.data);    /* flash address for initial values */
 
     /* Zero-initialized data (BSS) in SRAM */
     .bss : 
     {
-        _sbss = .;               /* start of BSS */
-        *(.bss*)                 /* all .bss sections */
-        _ebss = .;               /* end of BSS */
+        . = ALIGN(8);             /* ensure start aligned */
+        _sbss = .;                /* start of BSS */
+        *(.bss*)                  /* all .bss sections */
+        *(COMMON)                 /* any COMMON variables */
+        . = ALIGN(8);             /* align end of .bss */
+        _ebss = .;                /* end of BSS */
     } > SRAM
-
     
-/* Stack top symbol */
-_estack = .;
+/* Stack top symbol - INSIDE SECTIONS */
+    _estack = . + 0x1000;
 }
+
+
+
 
 /* --------------------------------------------------
    RAM usage safety check (OUTSIDE SECTIONS)
 -------------------------------------------------- */
 _total_ram_used = SIZEOF(.data) + SIZEOF(.bss);
-
 ASSERT(_total_ram_used <= LENGTH(SRAM),
        "ERROR: .data + .bss exceeds SRAM size!");

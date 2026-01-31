@@ -8,6 +8,7 @@ SRAM             0x20000000         0x00005000         xrw
 
 Linker script and memory map
 
+                0x00001000                _stack_size = 0x1000
 
 .text           0x08000000      0x108
  *(.vectors*)
@@ -39,25 +40,30 @@ Linker script and memory map
  .rel.iplt      0x08000108        0x0 startup.o
 
 .data           0x20000000        0x0 load address 0x08000108
+                0x20000000                . = ALIGN (0x8)
                 0x20000000                _sdata = .
  *(.data*)
  .data          0x20000000        0x0 main.o
  .data          0x20000000        0x0 startup.o
+                0x20000000                . = ALIGN (0x8)
                 0x20000000                _edata = .
                 0x08000108                _sidata = LOADADDR (.data)
 
 .igot.plt       0x20000000        0x0 load address 0x08000108
  .igot.plt      0x20000000        0x0 startup.o
 
-.bss            0x20000000        0xc load address 0x08000108
+.bss            0x20000000      0x190 load address 0x08000108
+                0x20000000                . = ALIGN (0x8)
                 0x20000000                _sbss = .
  *(.bss*)
- .bss           0x20000000        0xc main.o
-                0x20000000                dummy
- .bss           0x2000000c        0x0 startup.o
-                0x2000000c                _ebss = .
-                0x2000000c                _estack = .
-                0x0000000c                _total_ram_used = (SIZEOF (.data) + SIZEOF (.bss))
+ .bss           0x20000000      0x190 main.o
+                0x20000000                arr
+ .bss           0x20000190        0x0 startup.o
+ *(COMMON)
+                0x20000190                . = ALIGN (0x8)
+                0x20000190                _ebss = .
+                0x20001190                _estack = (. + 0x1000)
+                0x00000190                _total_ram_used = (SIZEOF (.data) + SIZEOF (.bss))
                 0x00000001                ASSERT ((_total_ram_used <= LENGTH (SRAM)), ERROR: .data + .bss exceeds SRAM size!)
 LOAD main.o
 LOAD startup.o
@@ -85,9 +91,9 @@ LOAD linker stubs
  .debug_line    0x00000000       0x63 main.o
  .debug_line    0x00000063       0x54 startup.o
 
-.debug_str      0x00000000       0xc0
- .debug_str     0x00000000       0xa8 main.o
- .debug_str     0x000000a8       0x18 startup.o
+.debug_str      0x00000000       0xba
+ .debug_str     0x00000000       0xa2 main.o
+ .debug_str     0x000000a2       0x18 startup.o
                                  0x3d (size before relaxing)
 
 .comment        0x00000000       0x4d

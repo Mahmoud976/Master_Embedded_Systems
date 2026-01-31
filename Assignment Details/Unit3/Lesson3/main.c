@@ -23,7 +23,7 @@
 #define PORTA_CRH     *((volatile int *)( PORTA_BASE + 0x04))
 #define PORTA_ODR     *((volatile int *)( PORTA_BASE + 0x0c))
 
-volatile int dummy[3]; // At least 12 bytes to satisfy Proteus
+volatile int arr[100] = {0};
 
 int main(void)
 {

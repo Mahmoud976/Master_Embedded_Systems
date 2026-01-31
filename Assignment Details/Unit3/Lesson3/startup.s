@@ -10,6 +10,8 @@
 /*--------------------------------------------------
  Global symbols
 --------------------------------------------------*/
+ 
+
 
 .global _reset             /* Make Reset Handler visible to linker */
 .global Vectors_Handler    /* Make default interrupt handler global */
