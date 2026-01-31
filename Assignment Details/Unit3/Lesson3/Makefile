@@ -24,7 +24,7 @@ OBJCOPY=arm-none-eabi-objcopy.exe
 #-----------------------------------------------------
 # -mcpu : target CPU 
 # -g : generate debug information 
-# -gdwaf-2 : generate debug information compatible with proteus
+# -gdwarf-2 : generate debug information compatible with proteus
 
 CFLAGS=-gdwarf-2 -mcpu=cortex-m3 -mthumb
 
