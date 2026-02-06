@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Stack_t">
+      <UniqueIdentifier>{886c0479-843a-467c-959b-ed3548728d2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Queue_t">
+      <UniqueIdentifier>{8197f16a-83d7-413e-9be2-340f5c374fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linked_List_t">
+      <UniqueIdentifier>{0e8b3363-4fdc-441a-a4dd-6ead1c2189eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{5a120c99-e947-4521-a5ee-8f94ca95769c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Linked_List.c">
+      <Filter>Linked_List_t</Filter>
+    </ClCompile>
+    <ClCompile Include="FIFO.c">
+      <Filter>Queue_t</Filter>
+    </ClCompile>
+    <ClCompile Include="LIFO.c">
+      <Filter>Stack_t</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_LIFO.c">
+      <Filter>Stack_t</Filter>
+    </ClCompile>
+    <ClCompile Include="String.c">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Typedef_t.h">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_FIFO.c">
+      <Filter>Queue_t</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Linked_List.c">
+      <Filter>Linked_List_t</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Linked_List.h">
+      <Filter>Linked_List_t</Filter>
+    </ClInclude>
+    <ClInclude Include="FIFO.h">
+      <Filter>Queue_t</Filter>
+    </ClInclude>
+    <ClInclude Include="LIFO.h">
+      <Filter>Stack_t</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_LIFO.h">
+      <Filter>Stack_t</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_FIFO.h">
+      <Filter>Queue_t</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_Linked_List.h">
+      <Filter>Linked_List_t</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
