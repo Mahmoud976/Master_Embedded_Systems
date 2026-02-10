@@ -1,0 +1,18 @@
+﻿  App.c
+G:\concol\c\Student_Information_Management_System\App.c(44,32): warning C4013: 'strcspn' undefined; assuming extern returning int
+G:\concol\c\Student_Information_Management_System\App.c(80,17): warning C4013: 'Print_Student' undefined; assuming extern returning int
+G:\concol\c\Student_Information_Management_System\App.c(95,19): warning C4477: 'scanf' : format string '%hhu' requires an argument of type 'unsigned char *', but variadic argument 1 has type 'Course_t *'
+G:\concol\c\Student_Information_Management_System\App.c(95,19): message : consider using '%u' in the format string
+G:\concol\c\Student_Information_Management_System\App.c(95,19): message : consider using '%I32u' in the format string
+  System.c
+G:\concol\c\Student_Information_Management_System\System.c(157,23): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+G:\concol\c\Student_Information_Management_System\System.c(189,31): warning C4018: '<': signed/unsigned mismatch
+G:\concol\c\Student_Information_Management_System\System.c(207,58): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+G:\concol\c\Student_Information_Management_System\System.c(216,32): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+G:\concol\c\Student_Information_Management_System\System.c(472,19): warning C4013: 'strcspn' undefined; assuming extern returning int
+G:\concol\c\Student_Information_Management_System\System.c(474,17): warning C4013: 'strncpy' undefined; assuming extern returning int
+G:\concol\c\Student_Information_Management_System\System.c(480,17): warning C4013: 'strlen' undefined; assuming extern returning int
+G:\concol\c\Student_Information_Management_System\System.c(489,33): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  main.c
+  Generating Code...
+  Student_Information_Management_System.vcxproj -> G:\concol\c\Student_Information_Management_System\x64\Debug\Student_Information_Management_System.exe
