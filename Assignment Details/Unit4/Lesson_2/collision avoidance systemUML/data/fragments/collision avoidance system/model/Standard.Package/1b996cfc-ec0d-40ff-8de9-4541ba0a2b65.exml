@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="System Analysis" version="4">
+  <OBJECT>
+    <ID name="System Analysis" mc="Standard.Package" uid="1b996cfc-ec0d-40ff-8de9-4541ba0a2b65"/>
+    <PID name="collision avoidance system" mc="Standard.Package" uid="a623787b-4115-4b06-bde4-94cdceec298d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[System Analysis]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="74d0c175-dad7-442d-90da-115b916ce1d1"/>
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="39930573-cf23-4f99-8785-32f147987438"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Controller" mc="Standard.Actor" uid="9847b26c-78f4-4497-a12c-81d545283771"/>
+        <COMPID name="UltrasonicSensor" mc="Standard.Actor" uid="d268ab27-4246-4dad-ae71-7c7824176302"/>
+        <COMPID name="Motor" mc="Standard.Actor" uid="8bc41970-c630-4cc1-8203-5a41b6926bca"/>
+        <COMPID name="MeasureDistance" mc="Standard.UseCase" uid="c50ace33-5109-426e-80fd-1727fee16075"/>
+        <COMPID name="ControlMotor" mc="Standard.UseCase" uid="60bddd57-998d-4b04-9989-986170dd2b28"/>
+        <COMPID name="sendDistance" mc="Standard.UseCase" uid="429002a6-c0d7-413a-a55a-a33ca8083cc8"/>
+        <COMPID name="readDistance" mc="Standard.UseCase" uid="05eddf02-bb0d-4fd2-beb4-40e332feccce"/>
+        <COMPID name="setSpeed" mc="Standard.UseCase" uid="f77060da-2c2e-4543-8389-5cba1821afd2"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="CollisionAvoidance_UseCases" mc="Standard.UseCaseDiagram" uid="3b825ad3-e4af-4ea8-adc8-b8f15747932b"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

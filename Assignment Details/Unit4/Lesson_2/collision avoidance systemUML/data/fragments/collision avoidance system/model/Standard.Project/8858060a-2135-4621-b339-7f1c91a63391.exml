@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="collision avoidance system" version="4">
+  <OBJECT>
+    <ID name="collision avoidance system" mc="Standard.Project" uid="8858060a-2135-4621-b339-7f1c91a63391"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[collision avoidance system]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="collision avoidance system" mc="Standard.Package" uid="a623787b-4115-4b06-bde4-94cdceec298d"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="collision avoidance system" mc="Infrastructure.DiagramSet" uid="14c03e0e-6267-4af0-a9d2-aee38f0aba47"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

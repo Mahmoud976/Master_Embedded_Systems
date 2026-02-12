@@ -1,0 +1,7 @@
+#Thu Feb 12 16:55:45 GMT+02:00 2026
+org.modelio.app.module.propertytab.GModule\ [id\='SysMLArchitect',\ version\='5.4.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_SysMLPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.app.module.propertytab.GModule\ [id\='SysMLArchitect',\ version\='5.4.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_SysMLPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.app.diagram.editor.OpenedDiagrams0='CollisionAvoidance_Classes' {767a2550-0fef-42d5-a0fe-cbc4457a00df} Standard.ClassDiagram
+org.modelio.app.module.propertytab.GModule\ [id\='SysMLArchitect',\ version\='5.4.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_SysMLPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.app.diagram.editor.OpenedDiagrams1='CollisionAvoidance_Sequence' {7e70c28c-44a8-4686-bb90-419fbf83bd6f} Standard.SequenceDiagram
+org.modelio.app.module.propertytab.GModule\ [id\='SysMLArchitect',\ version\='5.4.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_SysMLPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom

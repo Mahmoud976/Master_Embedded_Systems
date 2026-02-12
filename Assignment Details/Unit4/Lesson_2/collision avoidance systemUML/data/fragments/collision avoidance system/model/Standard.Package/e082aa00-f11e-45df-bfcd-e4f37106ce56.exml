@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Controller_StateMachine" version="4">
+  <OBJECT>
+    <ID name="Controller_StateMachine" mc="Standard.Package" uid="e082aa00-f11e-45df-bfcd-e4f37106ce56"/>
+    <PID name="collision avoidance system" mc="Standard.Package" uid="a623787b-4115-4b06-bde4-94cdceec298d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Controller_StateMachine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Sensor_StateMachine" mc="Standard.StateMachine" uid="90fcb919-fb9f-454c-8901-30883fb61f81"/>
+        <COMPID name="Controller_StateMachine" mc="Standard.StateMachine" uid="696d0d31-4a4f-4cfc-b690-36738647b226"/>
+        <COMPID name="Motor_StateMachine" mc="Standard.StateMachine" uid="3467271e-9702-48e7-a64d-b6f19cfc1ecf"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="UltrasonicSensor" mc="Standard.Class" uid="ae376a7d-97c0-4d4f-b3b7-90c9180ec220"/>
+        <COMPID name="Controller" mc="Standard.Class" uid="83bacc7c-ae65-44fc-b698-3aec59d8c779"/>
+        <COMPID name="Motor" mc="Standard.Class" uid="b379d1a5-7f7c-47c1-b5d0-6d8a16a261b8"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="CollisionAvoidance_Classes" mc="Standard.ClassDiagram" uid="767a2550-0fef-42d5-a0fe-cbc4457a00df"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

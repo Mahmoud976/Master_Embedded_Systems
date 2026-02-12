@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="collision avoidance system" version="4">
+  <OBJECT>
+    <ID name="collision avoidance system" mc="Standard.Package" uid="a623787b-4115-4b06-bde4-94cdceec298d"/>
+    <PID name="collision avoidance system" mc="Standard.Project" uid="8858060a-2135-4621-b339-7f1c91a63391"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[collision avoidance system]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="System Analysis" mc="Standard.Package" uid="1b996cfc-ec0d-40ff-8de9-4541ba0a2b65"/>
+        <COMPID name="System Design" mc="Standard.Package" uid="e082aa00-f11e-45df-bfcd-e4f37106ce56"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
