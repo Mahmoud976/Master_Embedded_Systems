@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <WORKSPACE>
  <FRAME activewindow="0">
-  <PLACEMENT>2c0000000200000003000000ffffffffffffffffffffffffffffffffb90000000c000000c8060000f1030000</PLACEMENT>
+  <PLACEMENT>2c00000002000000030000000083ffff0083ffffffffffffffffffffb90000000c000000c8060000f1030000</PLACEMENT>
   <WINDOW type="default" module="ISIS">
-   <editor metric="0" gridmajor="2540000" mode="00000000" zoom="0" scale="118" flipped="0" gridminor="254000" gridmode="32" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
+   <editor metric="0" gridmajor="2540000" mode="00000000" zoom="-1" scale="118" flipped="0" gridminor="254000" gridmode="32" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
     <world y1="-8890000" x1="-12700000" y2="8890000" x2="12700000"/>
-    <centre x="0" y="0"/>
+    <centre x="0" y="10762"/>
     <origin x="0" y="0"/>
    </editor>
   </WINDOW>
@@ -18,9 +18,9 @@
   </editor>
  </MODULE>
  <MODULE name="ISIS">
-  <editor metric="0" gridmajor="2540000" mode="00000000" zoom="0" scale="118" flipped="0" gridminor="254000" gridmode="32" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
+  <editor metric="0" gridmajor="2540000" mode="00000000" zoom="-1" scale="118" flipped="0" gridminor="254000" gridmode="32" snapidx="2" snap="254000" xcursor="0" orgmode="0" snaprange="127000">
    <world y1="-8890000" x1="-12700000" y2="8890000" x2="12700000"/>
-   <centre x="0" y="0"/>
+   <centre x="0" y="10762"/>
    <origin x="0" y="0"/>
   </editor>
  </MODULE>
@@ -51,7 +51,7 @@
      <ITEM name="nItems">0</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="12" x="222" flags="0000000b" y="371" h="35" pid="200" iid="1">
+   <POPUP w="12" x="-75" flags="0000000b" y="377" h="35" pid="200" iid="1">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
@@ -61,14 +61,14 @@
      <ITEM name="TopLineAddress">08000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="16" x="-1" flags="0000800b" y="88" h="32" pid="210" iid="1">
+   <POPUP w="20" x="-76" flags="0000000b" y="190" h="32" pid="210" iid="1">
     <PROPERTIES>
      <ITEM name="DataType">2</ITEM>
      <ITEM name="DispChars">Yes</ITEM>
      <ITEM name="DispFormat">2</ITEM>
      <ITEM name="ShowChanges">Yes</ITEM>
      <ITEM name="ShowToolTips">Yes</ITEM>
-     <ITEM name="TopLineAddress">20001060</ITEM>
+     <ITEM name="TopLineAddress">200024CC</ITEM>
     </PROPERTIES>
    </POPUP>
    <POPUP w="16" x="128" flags="0000000a" y="240" h="32" pid="220" iid="1">
@@ -361,15 +361,15 @@
      <ITEM name="TopLineAddress">E000E000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="1001" x="856" flags="0000000b" y="171" h="786" pid="100" iid="1">
+   <POPUP w="1023" x="897" flags="0000800b" y="185" h="786" pid="100" iid="1">
     <PROPERTIES/>
    </POPUP>
-   <POPUP w="369" x="813" flags="0000000b" y="532" h="300" pid="101" iid="1">
+   <POPUP w="475" x="97" flags="0000000b" y="260" h="300" pid="101" iid="1">
     <PROPERTIES>
-     <ITEM name="Address Column Width">506</ITEM>
+     <ITEM name="Address Column Width">97</ITEM>
      <ITEM name="AutoResize">No</ITEM>
      <ITEM name="Gridlines">Yes</ITEM>
-     <ITEM name="Name Column Width">506</ITEM>
+     <ITEM name="Name Column Width">165</ITEM>
      <ITEM name="ShowAddresses">Yes</ITEM>
      <ITEM name="ShowGlobals">Yes</ITEM>
      <ITEM name="ShowPreviousValues">No</ITEM>
@@ -384,7 +384,7 @@
    <POPUP w="30" x="748" flags="00000008" y="860" h="20" pid="102" iid="1">
     <PROPERTIES/>
    </POPUP>
-   <POPUP w="320" x="921" flags="0000000b" y="520" h="240" pid="104" iid="1">
+   <POPUP w="320" x="1259" flags="0000000b" y="694" h="240" pid="104" iid="1">
     <PROPERTIES/>
    </POPUP>
    <POPUP w="22" x="788" flags="00000008" y="900" h="18" pid="350" iid="1">
@@ -392,5 +392,6 @@
    </POPUP>
   </PWI>
   <BREAKPOINT LINE="99" FILE="startup.s" ADDRESS="4294967295" PROJECT="-1"/>
+  <BREAKPOINT LINE="13" FILE="../../../../Projects/pressure monitoring system/Pressure_Monitoring_System/HW_project_KIT_FIRST_TERM_project1/main.c" ADDRESS="4294967295" PROJECT="-1"/>
  </MODULE>
 </WORKSPACE>
