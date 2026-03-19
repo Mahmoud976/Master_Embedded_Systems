@@ -1,0 +1,5 @@
+../Src/main.c:25:6:wait	24	static
+../Src/main.c:37:6:GPIO_ConfigurePins	40	static
+../Src/main.c:52:6:HandleButton1	16	static
+../Src/main.c:70:6:HandleButton13	16	static
+../Src/main.c:82:5:main	8	static
