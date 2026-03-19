@@ -1,0 +1,6 @@
+../Src/Led.c:5:16:Led_Get_On_Value	1
+../Src/Led.c:10:16:Led_Get_Off_Value	1
+../Src/Led.c:15:16:Led_Init	2
+../Src/Led.c:33:16:Led_ON	2
+../Src/Led.c:46:16:Led_OFF	2
+../Src/Led.c:61:16:Led_TOGGLE	3

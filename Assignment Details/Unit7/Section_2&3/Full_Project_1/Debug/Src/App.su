@@ -1,0 +1,2 @@
+../Src/App.c:54:6:APP_Password_Init	8	static
+../Src/App.c:66:6:APP_PasswordMode	16	static

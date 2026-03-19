@@ -1,0 +1,10 @@
+../Src/LCD.c:4:13:Lcd_DelayMs	2
+../Src/LCD.c:10:13:Lcd_WritePin	1
+../Src/LCD.c:16:13:Lcd_PulseEnable	1
+../Src/LCD.c:25:13:Lcd_WriteBits	2
+../Src/LCD.c:35:16:Lcd_Init	7
+../Src/LCD.c:100:16:Lcd_SendCommand	3
+../Src/LCD.c:119:16:Lcd_SendChar	3
+../Src/LCD.c:138:16:Lcd_SendString	4
+../Src/LCD.c:149:16:Lcd_SetCursor	6
+../Src/LCD.c:167:16:Lcd_Clear	1
