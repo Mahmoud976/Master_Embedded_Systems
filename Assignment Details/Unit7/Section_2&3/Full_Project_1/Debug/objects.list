@@ -1,5 +1,6 @@
 "./Src/App.o"
 "./Src/Button.o"
+"./Src/EXTI.o"
 "./Src/GPIO.o"
 "./Src/KeyPad.o"
 "./Src/LCD.o"

@@ -1,0 +1,8 @@
+"./Src/App.o"
+"./Src/EXTI.o"
+"./Src/GPIO.o"
+"./Src/LCD.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f103c6tx.o"

@@ -20,14 +20,14 @@
 #if !defined(__SOFT_FP__) && defined(__ARM_FP)
   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
 #endif
-#include "App.h"
 
+#include"APP.h"
 /* ================== Main Function ================== */
 int main(void)
 {
-	APP_Password_Init();
+
+
     while(1)
     {
-    	APP_PasswordMode();
     }
 }
