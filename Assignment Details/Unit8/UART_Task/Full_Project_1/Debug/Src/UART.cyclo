@@ -1,0 +1,8 @@
+../Src/UART.c:8:15:UART_Init	34
+../Src/UART.c:348:15:UART_DeInit	6
+../Src/UART.c:386:15:UART_Send_Data	11
+../Src/UART.c:565:15:UART_Receive_Data	11
+../Src/UART.c:615:15:UART_Wait_TC	2
+../Src/UART.c:626:6:USART1_IRQHandler	1
+../Src/UART.c:632:6:USART2_IRQHandler	1
+../Src/UART.c:639:6:USART3_IRQHandler	1
