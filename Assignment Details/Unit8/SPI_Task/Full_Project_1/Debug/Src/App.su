@@ -1,0 +1,4 @@
+../Src/App.c:14:6:UARTCALLBACK	4	static
+../Src/App.c:27:6:SPICALLBACK	16	static
+../Src/App.c:45:6:APP_Init	8	static
+../Src/App.c:107:6:APP_Mode	4	static

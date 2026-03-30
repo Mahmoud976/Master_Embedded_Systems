@@ -1,0 +1,4 @@
+../Src/RCC.c:34:10:RCC_GetSYS_CLCKFreq	5
+../Src/RCC.c:59:10:RCC_Get_HCLCKFreq	1
+../Src/RCC.c:64:10:RCC_Get_PCLK1Freq	1
+../Src/RCC.c:69:10:RCC_Get_PCLK2Freq	1

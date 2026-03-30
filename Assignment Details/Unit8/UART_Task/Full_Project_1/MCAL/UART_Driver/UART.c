@@ -383,56 +383,7 @@ UART_Status_t UART_DeInit(UART_ConfigPin_t *UART_CFG)
 }
 
 
-UART_Status_t UART_Send_Data(UART_ConfigPin_t *UART_CFG, uint16_t *Ptr_Data)
-{
-    if(NULL == UART_CFG || NULL == UART_CFG->UART || NULL == Ptr_Data)
-    {
-        return INVALID_PTR;
-    }
 
-    // Wait for TXE
-    if(UART_CFG->IRQ_Enable == UART_IRQ_Enable_NONE)
-    {
-        while(!(UART_CFG->UART->SR & (1<<7))); // TXE
-    }
-
-    // Send data
-    if(UART_CFG->Parity != UART_Parity_NONE)
-    {
-        // Parity enabled
-        if(UART_CFG->Payload_Length == UART_Payload_Length_8B)
-        {
-            UART_CFG->UART->DR = (*Ptr_Data & 0x7F); // 7 bits
-        }
-        else if(UART_CFG->Payload_Length == UART_Payload_Length_9B)
-        {
-            UART_CFG->UART->DR = (*Ptr_Data & 0xFF); // 8 bits
-        }
-        else
-        {
-            return INVALID_LENGTH;
-        }
-    }
-    else
-    {
-        // No parity
-        if(UART_CFG->Payload_Length == UART_Payload_Length_8B)
-        {
-            UART_CFG->UART->DR = (*Ptr_Data & 0xFF); // 8 bits
-        }
-        else if(UART_CFG->Payload_Length == UART_Payload_Length_9B)
-        {
-            UART_CFG->UART->DR = (*Ptr_Data & 0x1FF); // 9 bits
-        }
-        else
-        {
-            return INVALID_LENGTH;
-        }
-    }
-
-    return UART_OK;
-}
-/*
 UART_Status_t UART_Send_Data(UART_ConfigPin_t *UART_CFG, uint16_t *Ptr_Data)
 {
 	if(NULL==UART_CFG || NULL ==UART_CFG->UART)
@@ -465,8 +416,6 @@ UART_Status_t UART_Send_Data(UART_ConfigPin_t *UART_CFG, uint16_t *Ptr_Data)
 			(PS=1)). If the parity check fails, the PE flag is set in the USART_SR register and an
 			interrupt is generated if PEIE is set in the USART_CR1 register
 		 */
-		/*else
-		{
 			if(UART_CFG->Payload_Length ==UART_Payload_Length_8B)
 			{
 				UART_CFG->UART->DR=	(*Ptr_Data & (uint8_t)0xFF );
@@ -483,10 +432,10 @@ UART_Status_t UART_Send_Data(UART_ConfigPin_t *UART_CFG, uint16_t *Ptr_Data)
 
 		}
 
-	}
+
 	return UART_OK;
-}*/
-/*
+}
+
 UART_Status_t UART_Receive_Data(UART_ConfigPin_t *UART_CFG, uint16_t *Ptr_Data)
 {
 	if(NULL==UART_CFG || NULL ==UART_CFG->UART)
@@ -519,8 +468,7 @@ UART_Status_t UART_Receive_Data(UART_ConfigPin_t *UART_CFG, uint16_t *Ptr_Data)
 			(PS=1)). If the parity check fails, the PE flag is set in the USART_SR register and an
 			interrupt is generated if PEIE is set in the USART_CR1 register
 		 */
-		/*else
-		{
+
 			if(UART_CFG->Parity!=UART_Parity_NONE)
 			{
 				if(UART_CFG->Payload_Length ==UART_Payload_Length_8B)
@@ -558,58 +506,8 @@ UART_Status_t UART_Receive_Data(UART_ConfigPin_t *UART_CFG, uint16_t *Ptr_Data)
 			}
 		}
 
-	}
 	return UART_OK;
 
-}*/
-UART_Status_t UART_Receive_Data(UART_ConfigPin_t *UART_CFG, uint16_t *Ptr_Data)
-{
-    if(NULL == UART_CFG || NULL == UART_CFG->UART || NULL == Ptr_Data)
-    {
-        return INVALID_PTR;
-    }
-
-    // Wait for RXNE
-    if(UART_CFG->IRQ_Enable == UART_IRQ_Enable_NONE)
-    {
-        while(!(UART_CFG->UART->SR & (1<<5))); // RXNE
-    }
-
-    // Read data
-    if(UART_CFG->Parity != UART_Parity_NONE)
-    {
-        // Parity enabled
-        if(UART_CFG->Payload_Length == UART_Payload_Length_8B)
-        {
-            *Ptr_Data = (UART_CFG->UART->DR & 0x7F); // 7 bits
-        }
-        else if(UART_CFG->Payload_Length == UART_Payload_Length_9B)
-        {
-            *Ptr_Data = (UART_CFG->UART->DR & 0xFF); // 8 bits
-        }
-        else
-        {
-            return INVALID_LENGTH;
-        }
-    }
-    else
-    {
-        // No parity
-        if(UART_CFG->Payload_Length == UART_Payload_Length_8B)
-        {
-            *Ptr_Data = (UART_CFG->UART->DR & 0xFF); // 8 bits
-        }
-        else if(UART_CFG->Payload_Length == UART_Payload_Length_9B)
-        {
-            *Ptr_Data = (UART_CFG->UART->DR & 0x1FF); // 9 bits
-        }
-        else
-        {
-            return INVALID_LENGTH;
-        }
-    }
-
-    return UART_OK;
 }
 
 UART_Status_t UART_Wait_TC(UART_ConfigPin_t *UART_CFG)

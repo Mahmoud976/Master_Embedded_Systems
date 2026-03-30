@@ -59,8 +59,8 @@ all: main-build
 main-build: Full_Project_1.elf secondary-outputs
 
 # Tool invocations
-Full_Project_1.elf Full_Project_1.map: $(OBJS) $(USER_OBJS) G:\concol\Learn_in_depth\Master_Embedded_Systems\Assignment\ Details\Unit7\Lesson_4\Full_Project_1\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc  -gdwarf-2 -o "Full_Project_1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"G:\concol\Learn_in_depth\Master_Embedded_Systems\Assignment Details\Unit7\Lesson_4\Full_Project_1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Full_Project_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Full_Project_1.elf Full_Project_1.map: $(OBJS) $(USER_OBJS) G:\concol\Learn_in_depth\Master_Embedded_Systems\Assignment\ Details\Unit8\UART_Task\Full_Project_1\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc  -gdwarf-2 -o "Full_Project_1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"G:\concol\Learn_in_depth\Master_Embedded_Systems\Assignment Details\Unit8\UART_Task\Full_Project_1\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Full_Project_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
