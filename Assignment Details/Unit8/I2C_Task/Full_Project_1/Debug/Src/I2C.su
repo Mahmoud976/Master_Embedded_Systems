@@ -1,0 +1,30 @@
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:458:20:I2C_Enable	16	static
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:465:20:I2C_Disable	16	static
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:484:23:I2C_IsBusy	16	static
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:501:20:I2C_GenerateSTART	16	static
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:508:20:I2C_GenerateSTOP	16	static
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:515:20:I2C_ClearADDR	24	static
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:608:13:I2C_ClearSTOPFlag	24	static
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:621:13:I2C_EnableIRQ	16	static
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:643:13:I2C_DisableIRQ	16	static
+../Src/I2C.c:19:13:I2C_pin_cfg	24	static
+../Src/I2C.c:61:14:I2C_DefaultConfig	48	static
+../Src/I2C.c:84:6:I2C_BusRecover	32	static
+../Src/I2C.c:127:6:I2C_PeriClockControl	16	static
+../Src/I2C.c:144:14:I2C_Init	24	static
+../Src/I2C.c:273:14:I2C_DeInit	16	static
+../Src/I2C.c:326:14:I2C_Master_Transmit	40	static
+../Src/I2C.c:460:14:I2C_Master_Receive	40	static
+../Src/I2C.c:599:14:I2C_Master_Transmit_IT	24	static
+../Src/I2C.c:637:14:I2C_Master_Receive_IT	24	static
+../Src/I2C.c:676:14:I2C_Slave_Transmit	24	static
+../Src/I2C.c:732:14:I2C_Slave_Receive	24	static
+../Src/I2C.c:784:14:I2C_Slave_Transmit_IT	24	static
+../Src/I2C.c:815:14:I2C_Slave_Receive_IT	24	static
+../Src/I2C.c:841:6:I2C_EV_IRQHandler	24	static
+../Src/I2C.c:910:13:I2C_HandleErrorIRQ	24	static
+../Src/I2C.c:935:6:I2C1_EV_IRQHandler	8	static
+../Src/I2C.c:943:6:I2C2_EV_IRQHandler	8	static
+../Src/I2C.c:951:6:I2C1_ER_IRQHandler	8	static
+../Src/I2C.c:952:6:I2C2_ER_IRQHandler	8	static
+../Src/I2C.c:1020:14:I2C_IsDeviceReady	40	static

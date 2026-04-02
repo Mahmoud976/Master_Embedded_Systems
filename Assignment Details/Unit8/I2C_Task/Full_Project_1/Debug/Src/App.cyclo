@@ -1,0 +1,6 @@
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:458:20:I2C_Enable	1
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:608:13:I2C_ClearSTOPFlag	1
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:621:13:I2C_EnableIRQ	3
+G:/concol/Learn_in_depth/Master_Embedded_Systems/Assignment Details/Unit8/I2C_Task/Full_Project_1/MCAL/I2C_Driver/I2C.h:643:13:I2C_DisableIRQ	3
+../Src/App.c:16:6:APP_Init	1
+../Src/App.c:44:6:APP_Mode	2
