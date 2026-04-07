@@ -1,0 +1,10 @@
+../Src/LCD.c:4:13:Lcd_DelayMs	24	static
+../Src/LCD.c:10:13:Lcd_WritePin	16	static
+../Src/LCD.c:16:13:Lcd_PulseEnable	16	static
+../Src/LCD.c:25:13:Lcd_WriteBits	24	static
+../Src/LCD.c:40:16:Lcd_Init	32	static
+../Src/LCD.c:120:16:Lcd_SendCommand	16	static
+../Src/LCD.c:139:16:Lcd_SendChar	16	static
+../Src/LCD.c:158:16:Lcd_SendString	16	static
+../Src/LCD.c:169:16:Lcd_SetCursor	24	static
+../Src/LCD.c:187:16:Lcd_Clear	16	static

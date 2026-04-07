@@ -1,0 +1,3 @@
+../Src/KeyPad.c:4:13:KeyPad_SetAllRowsHigh	2
+../Src/KeyPad.c:15:16:KeyPad_Init	4
+../Src/KeyPad.c:48:16:KeyPad_GetKey	8

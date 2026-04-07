@@ -1,0 +1,8 @@
+../Src/SPI.c:12:13:SPI_InitPins	24	static
+../Src/SPI.c:141:14:SPI_Init	16	static
+../Src/SPI.c:172:14:SPI_DeInit	16	static
+../Src/SPI.c:196:14:SPI_Send	24	static
+../Src/SPI.c:224:14:SPI_Receive	24	static
+../Src/SPI.c:258:14:SPI_TransmitReceive	24	static
+../Src/SPI.c:293:6:SPI1_IRQHandler	16	static
+../Src/SPI.c:304:6:SPI2_IRQHandler	16	static

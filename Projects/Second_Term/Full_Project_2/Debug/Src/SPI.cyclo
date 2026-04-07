@@ -1,0 +1,8 @@
+../Src/SPI.c:12:13:SPI_InitPins	9
+../Src/SPI.c:141:14:SPI_Init	5
+../Src/SPI.c:172:14:SPI_DeInit	5
+../Src/SPI.c:196:14:SPI_Send	10
+../Src/SPI.c:224:14:SPI_Receive	11
+../Src/SPI.c:258:14:SPI_TransmitReceive	12
+../Src/SPI.c:293:6:SPI1_IRQHandler	2
+../Src/SPI.c:304:6:SPI2_IRQHandler	2

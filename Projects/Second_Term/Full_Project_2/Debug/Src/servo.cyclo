@@ -1,0 +1,4 @@
+../Src/servo.c:6:6:Servo1_Entry_Gate_Init	1
+../Src/servo.c:18:6:Servo1_Entry_Gate	3
+../Src/servo.c:39:6:Servo2_Exit_Gate_Init	1
+../Src/servo.c:51:6:Servo2_Exit_Gate	3

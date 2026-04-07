@@ -1,0 +1,8 @@
+../Src/UART.c:8:15:UART_Init	32	static
+../Src/UART.c:348:15:UART_DeInit	16	static
+../Src/UART.c:387:15:UART_Send_Data	16	static
+../Src/UART.c:439:15:UART_Receive_Data	16	static
+../Src/UART.c:513:15:UART_Wait_TC	16	static
+../Src/UART.c:524:6:USART1_IRQHandler	8	static
+../Src/UART.c:530:6:USART2_IRQHandler	8	static
+../Src/UART.c:537:6:USART3_IRQHandler	8	static
