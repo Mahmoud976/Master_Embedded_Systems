@@ -1,0 +1,8 @@
+../MY_RTOS/scheduler.c:39:6:OS_SVC	3
+../MY_RTOS/scheduler.c:66:6:PendSV_Handler	1
+../MY_RTOS/scheduler.c:75:6:OS_SVC_Set	5
+../MY_RTOS/scheduler.c:97:6:MY_RTOS_Create_Main_Stack	1
+../MY_RTOS/scheduler.c:106:6:My_RTOS_idel_Task	1
+../MY_RTOS/scheduler.c:115:18:MY_RTOS_Init	2
+../MY_RTOS/scheduler.c:140:6:MY_RTOS_Create_Task_Stack	2
+../MY_RTOS/scheduler.c:170:18:MY_RTOS_Create_Task	2

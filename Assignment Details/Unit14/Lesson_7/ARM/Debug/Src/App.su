@@ -1,0 +1,10 @@
+../Src/App.c:63:6:taskA	8	static
+../Src/App.c:70:6:taskB	8	static
+../Src/App.c:78:6:EXTI9PB9_Callbk	4	static
+../Src/App.c:95:6:mainOs	8	static,ignoring_inline_asm
+../Src/App.c:149:6:PendSV_Handler	4	static
+../Src/App.c:154:6:OS_SVC	32	static
+../Src/App.c:184:28:SVC_Handler	0	static,ignoring_inline_asm
+../Src/App.c:189:5:OS_SVC_Set	32	static,ignoring_inline_asm
+../Src/App.c:211:6:APP_Init	16	static
+../Src/App.c:244:6:APP_Mode	4	static

@@ -1,0 +1,10 @@
+../Src/App.c:63:6:taskA	1
+../Src/App.c:70:6:taskB	1
+../Src/App.c:78:6:EXTI9PB9_Callbk	3
+../Src/App.c:95:6:mainOs	3
+../Src/App.c:149:6:PendSV_Handler	1
+../Src/App.c:154:6:OS_SVC	5
+../Src/App.c:184:28:SVC_Handler	1
+../Src/App.c:189:5:OS_SVC_Set	5
+../Src/App.c:211:6:APP_Init	1
+../Src/App.c:244:6:APP_Mode	2

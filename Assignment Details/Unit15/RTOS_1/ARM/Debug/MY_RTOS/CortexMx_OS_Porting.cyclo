@@ -1,0 +1,7 @@
+../MY_RTOS/CortexMx_OS_Porting.c:4:6:NMI_Handler	1
+../MY_RTOS/CortexMx_OS_Porting.c:8:6:HardFault_Handler	1
+../MY_RTOS/CortexMx_OS_Porting.c:12:6:MemManage_Handler	1
+../MY_RTOS/CortexMx_OS_Porting.c:16:6:BusFault_Handler	1
+../MY_RTOS/CortexMx_OS_Porting.c:20:6:UsageFault_Handler	1
+../MY_RTOS/CortexMx_OS_Porting.c:25:28:SVC_Handler	1
+../MY_RTOS/CortexMx_OS_Porting.c:33:6:HW_Init	1
