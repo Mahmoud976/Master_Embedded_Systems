@@ -1,0 +1,12 @@
+../Src/GPIO.c:4:16:GPIO_u8GetPinIndex	24	static
+../Src/GPIO.c:16:20:GPIO_EnableClock	16	static
+../Src/GPIO.c:44:16:GPIO_InitPin	48	static
+../Src/GPIO.c:174:16:GPIO_DeInitPin	32	static
+../Src/GPIO.c:235:16:GPIO_DeInitPort	24	static
+../Src/GPIO.c:277:16:GPIO_ReadPin	32	static
+../Src/GPIO.c:326:16:GPIO_ReadPort	24	static
+../Src/GPIO.c:367:16:GPIO_WritePin	24	static
+../Src/GPIO.c:414:16:GPIO_WritePort	24	static
+../Src/GPIO.c:448:16:GPIO_TogglePin	24	static
+../Src/GPIO.c:484:16:GPIO_TogglePort	24	static
+../Src/GPIO.c:518:16:GPIO_LockPin	24	static
