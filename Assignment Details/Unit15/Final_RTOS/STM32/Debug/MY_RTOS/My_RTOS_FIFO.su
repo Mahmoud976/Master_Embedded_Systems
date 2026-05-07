@@ -1,0 +1,5 @@
+../MY_RTOS/My_RTOS_FIFO.c:9:16:Queue_Init	24	static
+../MY_RTOS/My_RTOS_FIFO.c:22:16:Queue_Enqueue	16	static
+../MY_RTOS/My_RTOS_FIFO.c:44:16:Queue_Dequeue	16	static
+../MY_RTOS/My_RTOS_FIFO.c:63:9:Queue_Is_Full	16	static
+../MY_RTOS/My_RTOS_FIFO.c:70:9:Queue_Is_Empty	16	static
